@@ -1,0 +1,133 @@
+header {
+    background-color: #222222;
+    color: white;
+    width: 100%;
+}
+
+nav {
+    background-color: #F0A83E;
+    color: white;
+    width: 100%;
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:350px;
+    width: 100%;
+    text-align: center;
+}
+
+#firstText {
+    background-color: white;
+    color: #3C2313;
+    font-size: 25px;
+}
+
+#buttonComedero {
+    background-color: #F0A83E;
+    color: white;
+    border : 0px;
+    padding: 10px;
+}
+
+#patitaImage {
+    width: 80px;
+    height: 80px;
+}
+
+h2 {
+    color: #3C2313;
+    font-size: 30px;
+    margin: 0%;
+}
+
+#lista1 li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.horizontal {
+    display: flex;
+}
+
+.horizontal h3 {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+
+.products{
+    text-align: left;
+}
+
+.products h3 {
+    color: #3C2313;
+}
+
+.products h4 {
+    color: #F0A83E;
+}
+
+input {
+    background-color: #3C2313;
+    color: white;
+    border-radius:10px;
+    padding: 5px;
+    vertical-align:middle;
+}
+
+.vertical {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+button {
+    border-radius: 5px;
+    padding: 6px;
+    border: 0px
+}
+#resetear {
+    background-color: #8A8787;
+    color: white;
+    border-radius: 5px;
+}
+
+#enviar {
+    background-color: #F0A83E;
+    color: white;
+    border-radius: 5px;
+}
+
+.suscription {
+    background-color: #F0A83E;
+    padding: 4px;
+}
+
+.suscription input {
+    background-color: white;
+    border: 0px;
+}
+
+.suscription button {
+    background-color: #3C2313;
+    color: white;
+}
+
+.information {
+    background-color: #3C2313;
+    margin: 0px;
+}
+.information h3 {
+    color: white;
+}
+.information h5 {
+    color: #8A8787;
+}
+
+footer {
+    text-align: center;
+}
