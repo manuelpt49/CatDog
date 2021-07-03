@@ -8,23 +8,27 @@
     <title>consigna</title>
 </head>
 <body>
+    <!-- TOP BAR -->
     <div class="top">
         <p>Grandes ofertas en comedores</p>
         <ul class="moneda">
-            <li>España</li>
-            <li>ARG</li>
+            <li>España<i class="fas fa-chevron-down"></i></li>
+            <li>$ARG<i class="fas fa-chevron-down"></i></li>
         </ul>
     </div>
     
+    <!-- NAVEGACION -->
     <nav>
         <a href="#"><img src="img/logo.png" alt="Logo"></a>
-        <ul class="horizontal">
-            <h3>Categorías</h3>
-            <h3>Pets</h3>
-            <h3>Nosotros</h3>
-            <h3>Contactanos</h3>
+        <ul class="horizontal menu">
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Categorías</a></li>
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Pets</a></li>
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Nosotros</a></li>
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Contactanos</a></li>
         </ul>
     </nav>
+
+    <!-- BANNER ENCABEZADO -->
     <header>
         <div class="banner">
             <p id="firstText">¡Es un placer tenerte aquí!</p>
@@ -33,32 +37,34 @@
         </div>
     </header>
 
-    <section>
+    <section class="productos">
         <img id="patitaImage" src="img/patita.png">
-        <h2>Productos destacados</h2>
-        <section class="horizontal">
-            <h3>Comederos</h3>
-            <h3>Accesorios</h3>
-            <h3>Comida</h3>
-        </section>
+        <h2>Productos Destacados</h2>
+        <ul class="horizontal filtro">
+            <li>Comederos</li>
+            <li>-</li>
+            <li>Accesorios</li>
+            <li>-</li>
+            <li>Comida</li>
+        </ul>
     </section>
 
-    <section class="containerProducts">
-        <section class="products">
+    <section class="containerProductos">
+        <article class="product">
             <img src="img/carne.png" alt="Imagen de un juguete en forma de churrasco">
-            <h3>Juguete Churrasquito</h2>
-            <h4>$150</h3>
-        </section>
-        <section class="products">
+            <h3>Juguete Churrasquito</h3>
+            <span>$150</span>
+        </article>
+        <article class="product">
             <img src="img/comida.png" alt="Imagen de comedero para perro">
-            <h3>Comedero para perro</h2>
-            <h4>$250</h3>
-        </section>
-        <section class="products">
+            <h3>Comedero para perro</h3>
+            <span>$250</span>
+        </article>
+        <article class="product">
             <img src="img/huesos.png" alt="Imagen de un jueguete en forma de hueso">
-            <h3>Juguete Huesito</h2>
-            <h4>$650</h3>
-        </section>
+            <h3>Juguete Huesito</h3>
+            <span>$650</span>
+        </article>
     </section>
     <section class="vertical">
         <h2>Contáctanos</h2>
