@@ -1,29 +1,61 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
     background-color: #222222;
     color: white;
     width: 100%;
+    padding: 10px 60px;
 }
-
+.moneda {
+    list-style: none;
+}
+.moneda li {
+    display: inline-block;
+    margin: 0 10px;
+}
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #F0A83E;
     color: white;
     width: 100%;
+    padding: 20px 40px;
 }
-
-.banner {
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-image: url(../img/banner.png);
-    background-position: center center;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    height:350px;
-    width: 100%;
+    padding: 50px;
+    min-height: 409px;
+}
+
+
+.banner {
+    width: 40%;
     text-align: center;
+
 }
 
 #firstText {
     background-color: white;
     color: #3C2313;
-    font-size: 25px;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    padding: 10px;
 }
 
 #buttonComedero {
