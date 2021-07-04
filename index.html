@@ -20,7 +20,7 @@
     
     <!-- NAVEGACION -->
     <nav>
-        <a href="#"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#"><img src="img/headerLogo.svg" alt="Logo"></a>
         <!-- MENU HAMBURGUESA -->
         <input type="checkbox" name="burguer-menu" id="burguer-menu">
         <label for="burger-menu"><i class="fas fa-bars fa-2x"></i></label>
@@ -75,30 +75,57 @@
     </section>
 
     <!-- FORMULARIO DE CONTACTO -->
-    <section class="vertical">
+    <section class="contacto">
         <h2>Contáctanos</h2>
         <input type="text" placeholder="Nombre y apellido">
         <input type="text" placeholder="Ingresa tu correo electrónico">
         <input type="text" placeholder="Teléfono">
-        <button id="resetear">Resetear</button>
-        <button id="enviar">Enviar</button>
+        <div class="botones">
+            <button id="resetear">Resetear</button>
+            <button id="enviar">Enviar</button>
+        </div>
     </section>
+
+    <!-- SUSCRIPCIONES -->
     <section class="suscription">
-        <h3>Suscríbete para más novedades</h3>
-        <input type="text" placeholder="Ingresa tu correo electrónico">
-        <button>Suscribirme</button>
+        <div class="sub-title">
+            <img src="img/post-envelope.svg" alt="">
+            <h3>Suscríbete para más novedades</h3>
+        </div>
+        <div class="sub-form">
+            <input type="text" placeholder="Ingresa tu correo electrónico">
+            <button>Suscribirme</button>
+        </div>
     </section>
+
+    <!-- INFORMACION -->
     <section class="information">
-        <img src="img/location.png" alt="">
-        <h3>Localidad</h3>
-        <h5>Calle - provincia</h5>
-        <img src="img/call.png" alt="">
-        <h3>Telefóno</h3>
-        <h5>Número de teléfono</h5>
-        <img src="img/mail.png" alt="">
-        <h3>Correo electrónico</h3>
-        <h5>Dirección de correo</h5>
-        <img src="img/FontCat&Dog.png" alt="Logo de la página web">
+        <div class="info">
+            <div class="localidad">
+                <img src="img/localidad.svg" alt="">
+                <div class="info-group">
+                    <p>Localidad</p>
+                    <span>Calle - provincia</span>
+                </div>
+            </div>
+            <div class="telefono">
+                <img src="img/telefono.svg" alt="">
+                <div class="info-group">
+                    <p>Telefóno</p>
+                    <span>Número de teléfono</span>
+                </div>
+            </div>
+            <div class="correo">
+                <img src="img/correo.svg" alt="">
+                <div class="info-group">
+                    <p>Correo electrónico</p>
+                    <span>Dirección de correo</span>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/LogoCatDog.svg" alt="Logo de la página web">
+        </div>
     </section>
     <footer>
         <p>Todos los derechos reservados Front End</p>
