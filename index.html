@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>consigna</title>
 </head>
@@ -20,6 +21,11 @@
     <!-- NAVEGACION -->
     <nav>
         <a href="#"><img src="img/logo.png" alt="Logo"></a>
+        <!-- MENU HAMBURGUESA -->
+        <input type="checkbox" name="burguer-menu" id="burguer-menu">
+        <label for="burger-menu"><i class="fas fa-bars fa-2x"></i></label>
+        
+        <!-- ITEMS DE MENU -->
         <ul class="horizontal menu">
             <li><a href="#"><img src="img/pawprint.svg" alt=""> Categorías</a></li>
             <li><a href="#"><img src="img/pawprint.svg" alt=""> Pets</a></li>
@@ -37,35 +43,38 @@
         </div>
     </header>
 
-    <section class="productos">
+    
+    <!-- SECCION DE PRODUCTOS -->
+    <div class="productos">
         <img id="patitaImage" src="img/patita.png">
         <h2>Productos Destacados</h2>
         <ul class="horizontal filtro">
-            <li>Comederos</li>
+            <li><a href="">Comederos</a></li>
             <li>-</li>
-            <li>Accesorios</li>
+            <li><a href="">Accesorios</a></li>
             <li>-</li>
-            <li>Comida</li>
+            <li><a href="">Comida</a></li>
         </ul>
-    </section>
-
+    </div>
     <section class="containerProductos">
         <article class="product">
-            <img src="img/carne.png" alt="Imagen de un juguete en forma de churrasco">
+            <img src="img/churrasquito.png" alt="Imagen de un juguete en forma de churrasco">
             <h3>Juguete Churrasquito</h3>
             <span>$150</span>
         </article>
         <article class="product">
-            <img src="img/comida.png" alt="Imagen de comedero para perro">
+            <img src="img/comedero.png" alt="Imagen de comedero para perro">
             <h3>Comedero para perro</h3>
             <span>$250</span>
         </article>
         <article class="product">
-            <img src="img/huesos.png" alt="Imagen de un jueguete en forma de hueso">
+            <img src="img/Huesito.png" alt="Imagen de un jueguete en forma de hueso">
             <h3>Juguete Huesito</h3>
             <span>$650</span>
         </article>
     </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
     <section class="vertical">
         <h2>Contáctanos</h2>
         <input type="text" placeholder="Nombre y apellido">
