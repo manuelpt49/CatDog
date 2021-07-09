@@ -4,88 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>consigna</title>
 </head>
 <body>
-    <header>
-        <ul type="disc">
-            <li>Grandes ofertas en comedores</li>
-            <ul type="disc">
-                <li>España</li>
-                <li>ARG</li>
-            </ul>
+    <!-- TOP BAR -->
+    <div class="top">
+        <p>Grandes ofertas en comedores</p>
+        <ul class="moneda">
+            <li>España<i class="fas fa-chevron-down"></i></li>
+            <li>$ARG<i class="fas fa-chevron-down"></i></li>
         </ul>
-    </header>
+    </div>
     
+    <!-- NAVEGACION -->
     <nav>
-        <img src="img/logo.png" alt="">
-        <section class="horizontal">
-            <h3>Categorías</h3>
-            <h3>Pets</h3>
-            <h3>Nosotros</h3>
-            <h3>Contactanos</h3>
-        </section>
+        <a href="#"><img src="img/headerLogo.svg" alt="Logo"></a>
+        <!-- MENU HAMBURGUESA -->
+        <input type="checkbox" name="burguer-menu" id="burguer-menu">
+        <label for="burger-menu"><i class="fas fa-bars fa-2x"></i></label>
+        
+        <!-- ITEMS DE MENU -->
+        <ul class="horizontal menu">
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Categorías</a></li>
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Pets</a></li>
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Nosotros</a></li>
+            <li><a href="#"><img src="img/pawprint.svg" alt=""> Contactanos</a></li>
+        </ul>
     </nav>
 
-    <section class="banner">
-        <p id="firstText">¡Es un placer tenerte aquí!</p>
-        <p id="secondText">¡Comederos en descuentos!</p>
-        <button id="buttonComedero">COMEDEROS</button>
-    </section>
-    <br>
-    <br>
-    <section>
+    <!-- BANNER ENCABEZADO -->
+    <header>
+        <div class="banner">
+            <p id="firstText">¡Es un placer tenerte aquí!</p>
+            <p id="secondText">¡Comederos en descuentos!</p>
+            <button id="buttonComedero">COMEDEROS</button>
+        </div>
+    </header>
+
+    
+    <!-- SECCION DE PRODUCTOS -->
+    <div class="productos">
         <img id="patitaImage" src="img/patita.png">
-        <h2>Productos destacados</h2>
-        <section class="horizontal">
-            <h3>Comederos</h3>
-            <h3>Accesorios</h3>
-            <h3>Comida</h3>
-        </section>
+        <h2>Productos Destacados</h2>
+        <ul class="horizontal filtro">
+            <li><a href="">Comederos</a></li>
+            <li>-</li>
+            <li><a href="">Accesorios</a></li>
+            <li>-</li>
+            <li><a href="">Comida</a></li>
+        </ul>
+    </div>
+    <section class="containerProductos">
+        <article class="product">
+            <img src="img/churrasquito.png" alt="Imagen de un juguete en forma de churrasco">
+            <h3>Juguete Churrasquito</h3>
+            <span>$150</span>
+        </article>
+        <article class="product">
+            <img src="img/comedero.png" alt="Imagen de comedero para perro">
+            <h3>Comedero para perro</h3>
+            <span>$250</span>
+        </article>
+        <article class="product">
+            <img src="img/Huesito.png" alt="Imagen de un jueguete en forma de hueso">
+            <h3>Juguete Huesito</h3>
+            <span>$650</span>
+        </article>
     </section>
 
-    <section class="containerProducts">
-        <section class="products">
-            <img src="img/carne.png" alt="Imagen de un juguete en forma de churrasco">
-            <h3>Juguete Churrasquito</h2>
-            <h4>$150</h3>
-        </section>
-        <section class="products">
-            <img src="img/comida.png" alt="Imagen de comedero para perro">
-            <h3>Comedero para perro</h2>
-            <h4>$250</h3>
-        </section>
-        <section class="products">
-            <img src="img/huesos.png" alt="Imagen de un jueguete en forma de hueso">
-            <h3>Juguete Huesito</h2>
-            <h4>$650</h3>
-        </section>
-    </section>
-    <section class="vertical">
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contacto">
         <h2>Contáctanos</h2>
         <input type="text" placeholder="Nombre y apellido">
         <input type="text" placeholder="Ingresa tu correo electrónico">
         <input type="text" placeholder="Teléfono">
-        <button id="resetear">Resetear</button>
-        <button id="enviar">Enviar</button>
+        <div class="botones">
+            <button id="resetear">Resetear</button>
+            <button id="enviar">Enviar</button>
+        </div>
     </section>
+
+    <!-- SUSCRIPCIONES -->
     <section class="suscription">
-        <h3>Suscríbete para más novedades</h3>
-        <input type="text" placeholder="Ingresa tu correo electrónico">
-        <button>Suscribirme</button>
+        <div class="sub-title">
+            <img src="img/post-envelope.svg" alt="">
+            <h3>Suscríbete para más novedades</h3>
+        </div>
+        <div class="sub-form">
+            <input type="text" placeholder="Ingresa tu correo electrónico">
+            <button>Suscribirme</button>
+        </div>
     </section>
+
+    <!-- INFORMACION -->
     <section class="information">
-        <img src="img/location.png" alt="">
-        <h3>Localidad</h3>
-        <h5>Calle - provincia</h5>
-        <img src="img/call.png" alt="">
-        <h3>Telefóno</h3>
-        <h5>Número de teléfono</h5>
-        <img src="img/mail.png" alt="">
-        <h3>Correo electrónico</h3>
-        <h5>Dirección de correo</h5>
-        <img src="img/FontCat&Dog.png" alt="Logo de la página web">
+        <div class="info">
+            <div class="localidad">
+                <img src="img/localidad.svg" alt="">
+                <div class="info-group">
+                    <p>Localidad</p>
+                    <span>Calle - provincia</span>
+                </div>
+            </div>
+            <div class="telefono">
+                <img src="img/telefono.svg" alt="">
+                <div class="info-group">
+                    <p>Telefóno</p>
+                    <span>Número de teléfono</span>
+                </div>
+            </div>
+            <div class="correo">
+                <img src="img/correo.svg" alt="">
+                <div class="info-group">
+                    <p>Correo electrónico</p>
+                    <span>Dirección de correo</span>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/LogoCatDog.svg" alt="Logo de la página web">
+        </div>
     </section>
     <footer>
         <p>Todos los derechos reservados Front End</p>

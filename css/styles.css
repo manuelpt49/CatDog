@@ -1,29 +1,74 @@
-header {
-    background-color: #222222;
-    color: white;
-    width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: Roboto;
+}
+h2, h3 {
+    color: #3C2313;
+    text-align: center;
+}
+.top {
+    display: none;
+}
+.menu li {
+    display: none;
+}
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #F0A83E;
     color: white;
     width: 100%;
+    padding: 20px 40px;
+}
+nav input[type="checkbox"] {
+    display: none;
+    width: 40px;
+}
+label[for="burger-menu"] {
+    display: flex;
+    position: absolute;
+    right: 40px;
+}
+/* input:checked  ~ ul {
+    display:block;
+  } */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/banner.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    min-height: 409px;
 }
 
 .banner {
-    background-image: url(../img/banner.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:350px;
-    width: 100%;
+    width: 90%;
+    max-width: 500px;
     text-align: center;
 }
 
 #firstText {
     background-color: white;
-    color: #3C2313;
-    font-size: 25px;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+#secondText {
+    padding: 1.3rem;
 }
 
 #buttonComedero {
@@ -33,78 +78,141 @@ nav {
     padding: 10px;
 }
 
-#patitaImage {
-    width: 80px;
-    height: 80px;
+.containerProductos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px 10px 30px;
 }
 
-h2 {
-    color: #3C2313;
-    font-size: 30px;
-    margin: 0%;
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 
-#lista1 li {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
+.productos h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .horizontal {
     display: flex;
 }
 
-.horizontal h3 {
-    padding-left: 0px;
+.horizontal li {
+    list-style: none;
     padding-right: 15px;
+    padding-left: 15px;
 }
 
-
-.products{
-    text-align: left;
+.horizontal li a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-.products h3 {
-    color: #3C2313;
+.filtro {
+    margin: 10px;
 }
 
-.products h4 {
+.filtro li {
+    font-size: 0.9rem;
+    padding: 0 5px;
+    color: #666666;
+}
+.filtro li a {
+    color: #666666;
+}
+
+#patitaImage {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.product{
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    min-width: 265px;
+    max-width: 350px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.product span {
     color: #F0A83E;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    margin: 20px;
 }
 
 input {
     background-color: #3C2313;
+    border: none;
+    border-radius: 15px;
     color: white;
-    border-radius:10px;
-    padding: 5px;
-    vertical-align:middle;
+    margin: 5px;
+    max-width: 340px;
+    height: 40px;
+    padding: 15px;
+    width: 90%;
 }
 
-.vertical {
-    vertical-align: middle;
-    display: table-cell;
+.botones {
+    margin: 40px 0;
 }
-
 button {
-    border-radius: 5px;
-    padding: 6px;
-    border: 0px
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+    width: 110px;
+    height: 34px;
 }
+
 #resetear {
     background-color: #8A8787;
     color: white;
-    border-radius: 5px;
 }
 
 #enviar {
     background-color: #F0A83E;
     color: white;
-    border-radius: 5px;
+}
+.suscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A83E;
+    padding: 10px;
 }
 
-.suscription {
-    background-color: #F0A83E;
-    padding: 4px;
+.sub-title, .sub-form {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.sub-title h3 {
+    color:#FFFFFF;
+    font-size: 1rem;
+    margin-left: 15px;
 }
 
 .suscription input {
@@ -119,15 +227,94 @@ button {
 
 .information {
     background-color: #3C2313;
-    margin: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 23px 70px;
 }
-.information h3 {
+.information p {
     color: white;
 }
-.information h5 {
+.information span {
     color: #8A8787;
 }
-
+.information .logo {
+    align-self: center;
+    margin: 10px;
+}
+.localidad, .telefono, .correo {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+.info-group {
+    margin-left: 15px;
+}
 footer {
+    background-color: #222222;
     text-align: center;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        background-color: #222222;
+        color: white;
+        width: 100%;
+        padding: 10px 60px;
+    }
+    label[for="burger-menu"] {
+        display: none;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .moneda {
+        display: flex;
+    }
+    .moneda li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .moneda li i {
+        margin-left: 5px;
+        font-size: .6rem;
+    }
+  
+    header {
+        justify-content: flex-end;
+    }
+    .banner {
+        text-align: center;
+    }
+    .productos h2 {
+        font-size: 2.5rem;
+    }
+    .suscription {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #F0A83E;
+        padding: 10px;
+    }
+    .sub-title, .sub-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .sub-title h3 {
+        font-size: 1.25rem;
+    }
+    .information {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
 }
